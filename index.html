@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity CTF</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to my CTF</h1>
+    <p>Solve the challenge below</p>
+    
+    <h2>Challenge: Find the flag</h2>
+
+     <button class="hint-btn" onclick="toggleHint('hint1')">Hint 1</button>
+     <div id="hint1" class="hint" style="display: none;">
+       <p>Hint: Look at the HTML file</p>
+     </div>
+     
+     <button class="hint-btn" onclick="toggleHint('hint2')">Hint 2</button>
+     <div id="hint2" class="hint" style="display: none;">
+       <p>Hint: Try Caesar cipher</p>
+     </div>
+    
+    <form id="ctf-form">
+      <label for="answer"></label>
+      <input type="text" id="answer" placeholder="Enter the flag here" required />
+      <button type="submit">Submit</button>
+    </form>
+    <!-- paj101{puzlya mshn olyl} -->
+    
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
